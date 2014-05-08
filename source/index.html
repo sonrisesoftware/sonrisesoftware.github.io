@@ -2,28 +2,252 @@
 layout: default
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <h2>Project Dashboard - Winner of the 2014 Ubuntu App Showdown</h2>
+  <p>Our star app, Project Dashboard, won in the QML original apps category of the 2014 Ubuntu App Showdown. Check it out, it's available on Ubuntu and Ubuntu Touch, and coming soon to Mac and Windows!</p>
+  <p>
+    <a class="btn btn-lg btn-success" href="../../components/#navbar" role="button">Read more &raquo;</a>
+    &nbsp;&nbsp;&nbsp;
+    <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View app &raquo;</a>
+  </p>
+</div>
+
+<h2 style="padding-bottom:10px">Apps</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="list-group app-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <div class="text-center"><img src="/images/project-dashboard/icon.png" height="80px"/></div>
+        <br>
+        <h3 class="list-group-item-heading text-center">Project Dashboard <small>v0.5</small></h3>
+        <p class="list-group-item-text">
+          Project Dashboard lets your create projects that represent real-world projects, and then add plugins to your projects to manage information about them.<br><br>
+          
+          {% comment %}<b>Available plugins</b>
+          <ul>
+            <li>Tasks</li>
+            <li>Notes</li>
+            <li>Resources</li>
+            <li>Time Tracker</li>
+            <li>Events</li>
+            <li>GitHub</li>
+            <li>Travis CI</li>
+          </ul>{% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">For Ubuntu and Ubuntu Touch</p></div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="list-group app-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <div class="text-center"><img src="/images/weekly-planner/icon.png" height="80px"/></div>
+        <br>
+        <h3 class="list-group-item-heading text-center">Weekly Planner <small>v1.0</small></h3>
+        <p class="list-group-item-text">
+          Weekly Planner is a simple and minimalistic planner focused on helping you plan you week, without any extra clutter or unnecessary features.<br><br>
+
+          {% comment %}<b>Features</b>
+          <ul>
+            <li>A task list for each day of the week</li>
+            <li>A task list for tasks without a due date</li>
+            <li>Easily add tasks to a particular day of the week</li>
+            <li>Move tasks between days</li>
+            <li>Uncompleted tasks from the last week end up in the Uncategorized list</li>
+            <li>Times are automatically highlighted for quick recognition</li>
+          </ul>{% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">For Ubuntu only</p></div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="list-group app-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <div class="text-center"><img src="/images/weather-desktop/icon.png" height="80px"/></div>
+        <br>
+        <h3 class="list-group-item-heading text-center">Weather Desktop <small>v1.1</small></h3>
+        <p class="list-group-item-text">
+          Check the weather in a simple and easy-to-use manner. With no ads and a beautiful interface, it's easier and faster than checking weather websites!<br><br>
+
+          {% comment %}Weather Desktop provides access to multiple named locations, with previews of all available at the same time. It displays a summary of today's weather, 
+          with detailed current conditions that are easily accessible, daily forecasts for the next five days, hourly forecasts for the next 24 hours, and severe alerts.{% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">For Ubuntu only</p></div>
+      </a>
+    </div>
   </div>
 </div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+<div class="row">
+  <div class="col-md-4">
+    <div class="list-group app-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <div class="text-center"><img src="/images/project-dashboard/icon.png" height="80px"/></div>
+        <br>
+        <h3 class="list-group-item-heading text-center">Tasks for Ubuntu <small>v1.0</small></h3>
+        <p class="list-group-item-text">
+          Manage your tasks from any Ubuntu device, and if you have a Trello account, 
+          you can connect to it to manage your personal Trello boards.<br><br>
+
+          {% comment %}<b>Features</b>
+          <ul>
+            <li>Add, edit, and delete tasks</li>
+            <li>Organize tasks into projects</li>
+            <li>Add a description to a task</li>
+            <li>Assign priority to tasks</li>
+            <li>Assign tasks a due date</li>
+            <li>Mark tasks as completed</li>
+            <li>Add checklists to tasks</li>
+            <li>Mark tasks as recurring</li>
+            <li>Quickly add tasks from the task list page</li>
+            <li>Assign colored labels to tasks</li>
+            <li>Trello integration!</li>
+          </ul>{% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">For Ubuntu and Ubuntu Touch</p></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<h2 style="padding-bottom:10px">Libraries and Developer Tools</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="list-group dev-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <h3 class="list-group-item-heading text-center">Quartz UI Toolkit</h3>
+        <p class="list-group-item-text">
+          A cross-platform UI toolkit written in pure QML and available on any platform that supports Qt 5 or higher.<br>
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">Cross-platform</p></div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="list-group dev-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <h3 class="list-group-item-heading text-center">Code Units</h3>
+        <p class="list-group-item-text">
+          A cross-platform UI toolkit written in pure QML and available on any platform that supports Qt<br><br>
+
+          {% comment %}<b>Features</b>
+          <ul>
+            <li>Add, edit, and delete tasks</li>
+            <li>Organize tasks into projects</li>
+            <li>Add a description to a task</li>
+            <li>Assign priority to tasks</li>
+            <li>Assign tasks a due date</li>
+            <li>Mark tasks as completed</li>
+            <li>Add checklists to tasks</li>
+            <li>Mark tasks as recurring</li>
+            <li>Quickly add tasks from the task list page</li>
+            <li>Assign colored labels to tasks</li>
+            <li>Trello integration!</li>
+          </ul>{% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">Cross-platform</p></div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="list-group dev-entry">
+      <a href="#" class="list-group-item box">
+        <br>
+        <h3 class="list-group-item-heading text-center">Ubuntu UI Extras</h3>
+        <p class="list-group-item-text">
+          A cross-platform UI toolkit written in pure QML and available on any platform that supports Qt<br><br>
+
+          {% comment %}<b>Features</b>
+          <ul>
+            <li>Add, edit, and delete tasks</li>
+            <li>Organize tasks into projects</li>
+            <li>Add a description to a task</li>
+            <li>Assign priority to tasks</li>
+            <li>Assign tasks a due date</li>
+            <li>Mark tasks as completed</li>
+            <li>Add checklists to tasks</li>
+            <li>Mark tasks as recurring</li>
+            <li>Quickly add tasks from the task list page</li>
+            <li>Assign colored labels to tasks</li>
+            <li>Trello integration!</li>
+          </ul>
+            {% endcomment %}
+        </p>
+        <br><br>
+        
+        <div class="box-footer"><p class="text-center">For Ubuntu and Ubuntu Touch</p></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="recent-news" class="row">
+  <div class="col-md-3">
+    <h2 id="news-header" class="text-right" style="color:#666">Recent News</h2>
+  </div>
+  <div id="news-content" class="col-md-9">
+    {% for post in site.posts %}
+      <p><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a><p class="post-date">
+        {{ post.date | date: "%A, %B"}}
+        {% assign d = (post.date | date: "%-d") %}
+        {% case d %}
+          {% when 1 or 21 or 31 %}{{ d }}st
+          {% when 2 or 22 %}{{ d }}nd
+          {% when 3 or 23 %}{{ d }}rd
+          {% else %}{{ d }}th
+        {% endcase %}
+      </p></p>
+    {% endfor %}
+    <p><a href="">The future of Project Dashboard - Aiming for the Clouds</a><p class="post-date">Monday, May 5th</p></p>
+    <p><a href="">Project Dashboard wins best original QML app in the 2014 Ubuntu App Showdown</a><p class="post-date">Monday, May 5th</p></p>
+    <p><a href="">Entering the Ubuntu App Showdown - Project Dashboard</a><p class="post-date">Monday, May 5th</p></p>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    var appBox = $(".app-entry").children(".list-group-item");
+
+    function resizeDiv () {
+        appBox.height(appBox.width());
+    }
+    
+    function setEqualHeight(columns)
+    {
+      var tallestcolumn = 0;
+      columns.each(function() {
+        currentHeight = $(this).height();
+        if(currentHeight >= tallestcolumn) {
+          tallestcolumn  = currentHeight;
+        }
+      });
+      columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+      setEqualHeight(appBox);
+    });
+  
+    $(window).resize(function() { setEqualHeight(appBox ) });
+  })
+</script>
