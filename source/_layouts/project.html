@@ -25,6 +25,33 @@ layout: default
     <p class="text-center" style="color:#777;font-size:250%">{{ page.subtitle }}</p>
     {{ content }}
   </article>
+
+  {% if page.reviews %}
+  <hr>
+
+  <h3 class="text-center">What people say...</h3>
+  <br>
+
+  <div class="row" style="width:100%;margin-left: auto;margin-right: auto;">
+    {% for review in page.reviews %}
+    <div class="col-md-4 review-entry">
+      <p>{{ review.text }}</p>
+      
+      {% for star in review.rating %}
+      {% if star == 1 %}
+        <i class="fa fa-star"></i>
+      {% else %}
+        <i class="fa fa-star-o"></i>
+      {% endif %}
+      {% endfor %}
+      
+      <br>
+     
+      {{ review.author }}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 
 <!-- Modal -->
@@ -53,3 +80,30 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>
+  $(function() {
+    var appBox = $(".review-entry").children("p");
+
+    function resizeDiv () {
+        appBox.height(appBox.width());
+    }
+    
+    function setEqualHeight(columns)
+    {
+      var tallestcolumn = 0;
+      columns.each(function() {
+        currentHeight = $(this).height();
+        if(currentHeight >= tallestcolumn) {
+          tallestcolumn  = currentHeight;
+        }
+      });
+      columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+      setEqualHeight(appBox);
+    });
+  
+    $(window).resize(function() { setEqualHeight(appBox ) });
+  })
+</script>
