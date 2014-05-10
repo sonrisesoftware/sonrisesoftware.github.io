@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div>
+  <article role="article">
+    {% if page.title %}
+    <div class="page-header">
+      <h1>
+        {% if page.icon %}<img src="{{ page.icon }}" height="48"></img>{% endif %}
+        {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
+
+        {% if page.version %}
+        <small>{{ page.version }}</small>
+        {% endif %}
+        <span class="pull-right" style="display:inline-block">
+          <button class="btn btn-danger"><i class="fa fa-bug fa-lg"></i>&nbsp;&nbsp;Report a Bug</button>
+          <button class="btn btn-primary"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;Source Code</button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#install_modal"><i class="fa fa-download fa-lg"></i>&nbsp;&nbsp;Install</button>
+        </span>
+      </h1>
+    </div>
+    {% endif %}
+  
+    <p class="text-center" style="color:#777;font-size:250%">{{ page.subtitle }}</p>
+    {{ content }}
+  </article>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="install_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Install {{ page.title }}</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#{{ page.platforms[0].link }}" data-toggle="tab">{{ page.platforms[0].name }}</a></li>
+          <li><a href="#ubuntu-touch" data-toggle="tab">Ubuntu Touch</a></li>
+        </ul>
+        <br>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="{{ page.platforms[0].link }}">{{ page.platforms[0].text }}</div>
+          <div class="tab-pane fade" id="ubuntu-touch"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
