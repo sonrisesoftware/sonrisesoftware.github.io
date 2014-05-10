@@ -1,3 +1,62 @@
 {% comment %}
   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
 {% endcomment %}
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var options = {
+      closeButton: true,
+      acceptButton: false,
+      forceShow: true,
+      message: '<strong>Attention!</strong> We use cookies to improve your experience. By continuing to use this site, you accept such use. For more information, vist our <a href="#privacy-policy" data-toggle="modal" class="alert-link">Privacy Policy</a>.'
+    };
+    if ($.cookieBar(options)) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47662876-1', 'sonrisesoftware.com');
+      ga('send', 'pageview');
+    } 
+  });
+</script>
+
+<div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Privacy Policy</h4>
+      </div>
+      <div class="modal-body">
+        <strong>We do not collect any personally identifiable information, or sell information to 3rd parties.</strong>
+        
+        <h4><i class="fa fa-dot-circle-o fa-lg"></i>&nbsp;&nbsp;Cookies</h4>
+        
+        We use cookies and services that use cookies to improve the user experience. We use the following:<br><br>
+        
+        <ul>
+          <li>A "cookie acceptance" cookie</li>
+          <li>Cookies created by Google Analytics</li>
+        </ul>
+        
+        <br>
+        
+        <h4><i class="fa fa-bar-chart-o fa-lg"></i>&nbsp;&nbsp;Analytics Tracking</h4>
+        
+        <p>
+           This site uses <a href="http://google.com/analytics" target="_blank">Google Analytics</a> tracking. 
+      
+        </p><p>
+          Analytics information is used to help improve the website. All information collected is anonymous, and includes the number of visiters to this site, what pages they viewed, and where they came from.
+        </p><p>
+          <strong>You can disable cookies at any time using your browser settings.</strong>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
