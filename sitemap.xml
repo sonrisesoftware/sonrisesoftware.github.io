@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://sonrisesoftware.github.io/blog/2014/05/08/the-future-of-project-dashboard-aiming-for-the-clouds/
+        </loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/apps/project-dashboard/</loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/apps/weather-desktop/</loc>
+        <lastmod>2014-06-23T17:19:35-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/robots.txt</loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/blog/archives/</loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/blog/</loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/</loc>
+        <lastmod>2014-06-23T17:47:44-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sonrisesoftware.github.io/about/</loc>
+        <lastmod>2014-06-23T15:04:33-05:00</lastmod>
+    </url>
+</urlset>

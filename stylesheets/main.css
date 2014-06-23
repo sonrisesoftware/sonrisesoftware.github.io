@@ -1,0 +1,90 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 70px;
+  font-family: Ubuntu;
+  
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 75px;
+  
+  border-style:dashed none none;
+  border-width:1px;
+  border-color:#ccc;
+  padding-top:10px;
+  margin-bottom:15px;
+}
+
+a.link-muted:link {color:#999;}
+a.link-muted:hover {color:#428bca;}
+
+.image-heading {
+    color: #666;
+    font-weight: 100;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  /* background-color: transparent;*/
+}
+.jumbotron .btn {
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+
+.box {
+  background-color: #fdfdfd;
+  position: relative;
+}
+
+.box-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #888;
+}
+
+#recent-news {
+  border-style:solid none none;
+  border-width:1px;
+  border-color:#ddd;
+}
+
+#navbar {
+ /* border-style: none none solid none;
+  border-width:1px;
+  border-color:#d9edf7;*/
+}
+
+#news-content {
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding-top:3px;
+  border-style:none none none solid;
+  border-width:1px;
+  border-color:#ddd;
+  font-size:120%;
+}
+
+.post-date {
+  margin-top:-1em;
+  font-size:80%;
+  color:#aaa;
+}
+
+.shadowed-img {
+  box-shadow: 0px 0px 5px #888888;
+}

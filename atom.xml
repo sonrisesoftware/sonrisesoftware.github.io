@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Sonrise Software]]></title>
+  <link href="http://sonrisesoftware.github.io/atom.xml" rel="self"/>
+  <link href="http://sonrisesoftware.github.io/"/>
+  <updated>2014-06-23T17:56:05-05:00</updated>
+  <id>http://sonrisesoftware.github.io/</id>
+  <author>
+    <name><![CDATA[Michael Spencer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Future of Project Dashboard - Aiming for the Clouds]]></title>
+    <link href="http://sonrisesoftware.github.io/blog/2014/05/08/the-future-of-project-dashboard-aiming-for-the-clouds/"/>
+    <updated>2014-05-08T13:00:11-05:00</updated>
+    <id>http://sonrisesoftware.github.io/blog/2014/05/08/the-future-of-project-dashboard-aiming-for-the-clouds</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
