@@ -4,12 +4,12 @@ layout: default
 
 <!-- Main component for a primary marketing message or call to action -->
 <div class="jumbotron">
-  <h2>Project Dashboard - Winner of the 2014 Ubuntu App Showdown</h2>
-  <p>Our star app, Project Dashboard, won in the QML original apps category of the 2014 Ubuntu App Showdown. Check it out, it's available on Ubuntu and Ubuntu Touch, and coming soon to Mac and Windows!</p>
+  <h2>We Make Modern and Polished Apps for Ubuntu</h2>
+  <p>We build powerful productivity apps for Ubuntu and Ubuntu Touch, built with the very latest and greatest software toolkits available</p>
   <p>
-    <a class="btn btn-lg btn-success" href="../../components/#navbar" role="button">Read more &raquo;</a>
+    <a class="btn btn-lg btn-primary" href="/about" role="button"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;About Us &raquo;</a>
     &nbsp;&nbsp;&nbsp;
-    <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View app &raquo;</a>
+    <a class="btn btn-lg btn-danger" href="https://plus.google.com/b/107244312470407761790/" role="button"><i class="fa fa-google-plus fa-lg"></i>&nbsp;&nbsp;Follow Us &raquo;</a>
   </p>
 </div>
 
@@ -18,7 +18,7 @@ layout: default
 <div class="row">
   <div class="col-md-4">
     <div class="list-group app-entry">
-      <a href="#" class="list-group-item box">
+      <a href="/apps/project-dashboard" class="list-group-item box">
         <br>
         <div class="text-center"><img src="/images/project-dashboard/icon.png" height="80px"/></div>
         <br>
@@ -46,7 +46,7 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="list-group app-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://apps.ubuntu.com/cat/applications/weekly-planner" class="list-group-item box">
         <br>
         <div class="text-center"><img src="/images/weekly-planner/icon.png" height="80px"/></div>
         <br>
@@ -72,7 +72,7 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="list-group app-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://apps.ubuntu.com/cat/applications/weather-desktop/" class="list-group-item box">
         <br>
         <div class="text-center"><img src="/images/weather-desktop/icon.png" height="80px"/></div>
         <br>
@@ -93,7 +93,7 @@ layout: default
 <div class="row">
   <div class="col-md-4">
     <div class="list-group app-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://apps.ubuntu.com/cat/applications/ubuntu-tasks" class="list-group-item box">
         <br>
         <div class="text-center"><img src="/images/project-dashboard/icon.png" height="80px"/></div>
         <br>
@@ -130,7 +130,7 @@ layout: default
 <div class="row">
   <div class="col-md-4">
     <div class="list-group dev-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://github.com/sonrisesoftware/quartz-ui" class="list-group-item box">
         <br>
         <h3 class="list-group-item-heading text-center">Quartz UI Toolkit</h3>
         <p class="list-group-item-text">
@@ -144,26 +144,11 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="list-group dev-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://github.com/iBeliever/udata" class="list-group-item box">
         <br>
-        <h3 class="list-group-item-heading text-center">Code Units</h3>
+        <h3 class="list-group-item-heading text-center">uData</h3>
         <p class="list-group-item-text">
-          A cross-platform UI toolkit written in pure QML and available on any platform that supports Qt<br><br>
-
-          {% comment %}<b>Features</b>
-          <ul>
-            <li>Add, edit, and delete tasks</li>
-            <li>Organize tasks into projects</li>
-            <li>Add a description to a task</li>
-            <li>Assign priority to tasks</li>
-            <li>Assign tasks a due date</li>
-            <li>Mark tasks as completed</li>
-            <li>Add checklists to tasks</li>
-            <li>Mark tasks as recurring</li>
-            <li>Quickly add tasks from the task list page</li>
-            <li>Assign colored labels to tasks</li>
-            <li>Trello integration!</li>
-          </ul>{% endcomment %}
+          A wrapper around U1db on Ubuntu that generates objects which automatically syncronizates to U1db.<br>
         </p>
         <br><br>
         
@@ -173,31 +158,15 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="list-group dev-entry">
-      <a href="#" class="list-group-item box">
+      <a href="https://github.com/iBeliever/devutils" class="list-group-item box">
         <br>
-        <h3 class="list-group-item-heading text-center">Ubuntu UI Extras</h3>
+        <h3 class="list-group-item-heading text-center">Code Units</h3>
         <p class="list-group-item-text">
-          A cross-platform UI toolkit written in pure QML and available on any platform that supports Qt<br><br>
-
-          {% comment %}<b>Features</b>
-          <ul>
-            <li>Add, edit, and delete tasks</li>
-            <li>Organize tasks into projects</li>
-            <li>Add a description to a task</li>
-            <li>Assign priority to tasks</li>
-            <li>Assign tasks a due date</li>
-            <li>Mark tasks as completed</li>
-            <li>Add checklists to tasks</li>
-            <li>Mark tasks as recurring</li>
-            <li>Quickly add tasks from the task list page</li>
-            <li>Assign colored labels to tasks</li>
-            <li>Trello integration!</li>
-          </ul>
-            {% endcomment %}
+          Easily pull in dependencies on libraries hosted on GitHub, Launchpad, or even on your local filesystem.<br>
         </p>
         <br><br>
         
-        <div class="box-footer"><p class="text-center">For Ubuntu and Ubuntu Touch</p></div>
+        <div class="box-footer"><p class="text-center">Cross-platform</p></div>
       </a>
     </div>
   </div>
@@ -226,6 +195,7 @@ layout: default
 <script>
   $(function() {
     var appBox = $(".app-entry").children(".list-group-item");
+    var devBox = $(".dev-entry").children(".list-group-item");
 
     function resizeDiv () {
         appBox.height(appBox.width());
@@ -244,8 +214,10 @@ layout: default
     }
     $(document).ready(function() {
       setEqualHeight(appBox);
+      setEqualHeight(devBox);
     });
   
     $(window).resize(function() { setEqualHeight(appBox ) });
+    $(window).resize(function() { setEqualHeight(devBox ) });
   })
 </script>

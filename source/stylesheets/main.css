@@ -8,7 +8,7 @@ body {
   font-family: Ubuntu;
   
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 #footer {
@@ -16,17 +16,22 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 75px;
   
   border-style:dashed none none;
   border-width:1px;
   border-color:#ccc;
   padding-top:10px;
+  margin-bottom:15px;
 }
 
 a.link-muted:link {color:#999;}
 a.link-muted:hover {color:#428bca;}
 
+.image-heading {
+    color: #666;
+    font-weight: 100;
+}
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -38,7 +43,9 @@ a.link-muted:hover {color:#428bca;}
   font-size: 18px;
 }
 
+
 .box {
+  background-color: #fdfdfd;
   position: relative;
 }
 
@@ -54,6 +61,12 @@ a.link-muted:hover {color:#428bca;}
   border-style:solid none none;
   border-width:1px;
   border-color:#ddd;
+}
+
+#navbar {
+ /* border-style: none none solid none;
+  border-width:1px;
+  border-color:#d9edf7;*/
 }
 
 #news-content {

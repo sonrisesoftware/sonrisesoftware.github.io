@@ -9,6 +9,9 @@ comments: false
 sharing: true
 footer: false
 
+bug_tracker: https://github.com/sonrisesoftware/project-dashboard/issues
+source_code: https://github.com/sonrisesoftware/project-dashboard/
+
 platforms:
   - { link: ubuntu, name: Ubuntu, text: "Available from this PPA" }
   - { link: ubuntu-touch, name: "Ubuntu Touch", text: "Project Dashboard is available in the app store on Ubuntu Touch. Just search for \"Project Dashboard\" in the Apps scope in Ubuntu Touch!" }
