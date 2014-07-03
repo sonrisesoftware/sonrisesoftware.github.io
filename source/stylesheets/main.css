@@ -88,3 +88,17 @@ a.link-muted:hover {color:#428bca;}
 .shadowed-img {
   box-shadow: 0px 0px 5px #888888;
 }
+
+.circular-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+    border-width: thick;
+    border-color: white;
+    border-style: solid;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}

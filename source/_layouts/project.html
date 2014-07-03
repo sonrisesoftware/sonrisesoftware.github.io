@@ -18,7 +18,7 @@ layout: default
           <a href="{{ page.source_code }}" class="btn btn-primary"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;Source Code</a>
           
           {% if page.purchase %}
-            <a type="button" class="btn btn-success" href="{{ page.purchase }}"><i class="fa fa-shopping-cart fa-lg"></i>&nbsp;&nbsp;Purchase ({{ page.price }})</a>
+            <a type="button" class="btn btn-success" href="{{ page.purchase }}" {% if page.purchase-target %}target="{{purchase-target}}"{% endif %}><i class="fa fa-shopping-cart fa-lg"></i>&nbsp;&nbsp;Purchase ({{ page.price }})</a>
           {% else %}
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#install_modal"><i class="fa fa-download fa-lg"></i>&nbsp;&nbsp;Install</button>
           {% endif %}
